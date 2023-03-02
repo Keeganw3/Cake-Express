@@ -74,14 +74,19 @@
 /* Home Page */
 .hero-section {
     color: white;
+    width: 45%;
 }
 
 .hero-section strong {
-    color: purple;
+    color: #CA68F9;
 }
 
 #hero-image1 {
-    
+    height: auto;
+    width: 45%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
 }
 
 #hero-image2 {
@@ -89,7 +94,18 @@
 }
 
 #shop-button {
+    background-color: #CA68F9;
+    color: white;
+    border: 2px solid #CA68F9;
+    border-width: 15px;
+    border-radius: 5px;
+    font-size: large;
+    margin-left: 25%;
+    text-decoration: none;
+}
 
+#shop-button:hover {
+    color: black;
 }
 
 /* Custom Cakes Page*/
