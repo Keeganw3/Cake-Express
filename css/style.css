@@ -70,6 +70,35 @@
     left: 20px;
 }
 /* ----- End Header ------ */
+
+/* Home Page */
+.hero-section {
+    color: white;
+}
+
+.hero-section strong {
+    color: purple;
+}
+
+#hero-image1 {
+    
+}
+
+#hero-image2 {
+    
+}
+
+#shop-button {
+
+}
+
+/* Custom Cakes Page*/
+hero-image2 {
+
+}
+
+
+/* Cart Page*/
 /* Cart Header  */
 .cart-header{
     background-image: url("../images/cartimage.jpg");
