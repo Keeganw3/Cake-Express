@@ -1,27 +1,27 @@
-body {
-
-}
-
 header {
-    background-color: #E5E7EB;
-    color: #1F2937;
-    text-size-adjust: 36px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  text-size-adjust: 36px;
 }
 
 .hero-section {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    text-size-adjust: 48px;
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-size-adjust: 48px;
 }
 
 .quote-section {
-    background-color: #E5E7EB;
-    color: #1F2937;
-    text-size-adjust: 36px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  text-size-adjust: 36px;
+}
+
+body {
+  background-color: #1f2937;
 }
 
 footer {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    text-size-adjust: 48px;
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-size-adjust: 48px;
 }
