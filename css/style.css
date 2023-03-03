@@ -1,3 +1,33 @@
+/*CSS RESETS*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/*CSS RESETS*/
+
+body {
+
+}
+
+
+
 header {
     background-color: #e5e7eb;
     color: #1f2937;
@@ -14,18 +44,123 @@ header {
     background-color: #e5e7eb;
     color: #1f2937;
     text-size-adjust: 36px;
-  }
-  
-  body {
-    background-color: #1f2937;
-  }
-  
-  footer {
-    background-color: #1f2937;
-    color: #f9faf8;
+}
+
+
+/* cart */
+
+.cart{
+    padding: 50px 0px;
+background-color: #1E1E1E;
+}
+.inner-section{
+    display: flex;
+padding: 20px;
+}
+.coupon-cart{
+    text-align: start;
+color: #E5E7EB;
+margin-left: 20%;
+}
+.heading-cart{
+    display: flex;
+    flex-basis: 100%;
+    text-align: center;
+}
+.form-design{
+    background-color: #F9FAF8;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.btn-type-tertiary{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px ;  
+    width: 30%;
+    color: #F9FAF8;
+    background-color: #205688;
+
+}
+.btn-type-secondary{
+    background-color: #205688;
+    padding: 8px 16px;
+border: none;
+margin-left: -5px;
+border-radius:0 10px 10px 0 ;
+color: #F9FAF8;
+
+}
+
+/* cart */
+
+
+/*footer-banner*/
+.footer-banner{
+    background-color: rgba(32, 86, 136, 1);
+    color: #E5E7EB;
+}
+.wrapper{
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+ .footer-banner-text{
+    position: absolute;
+    top: 50%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    text-align: left; 
+
+} 
+
+.col{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.p-color-base{
+    color: #1F2937;
+}
+.p-color-secondary{
+    color: #1FFC85;
+}
+
+.footer-image {
+    margin-left: 50px;
+}
+
+.input{
+    width: 50%;
+padding: 8px 16px;
+margin-right: 0;
+border-radius: 10px 0 0 10px ;
+border: none;
+}
+
+.btn-type-primary{
+    
+    padding: 8px 16px;
+background-color: #3FC675;
+border: none;
+margin-left: -5px;
+border-radius:0 10px 10px 0 ;
+}
+.input ,.btn-type-primary,.btn-type-secondary,.btn-type-tertiary{
+    box-shadow: 2px 2px 2px #353434;
+}
+.input-form{
+padding: 50px 0;
+}
+/*footer-banner*/
+
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
     text-size-adjust: 48px;
   }
-  =======
   @font-face {
       font-family: 'Roboto-Regular';
       src: url(/fonts/roboto/Roboto-Regular.ttf);
@@ -47,9 +182,11 @@ header {
       src: url(/fonts/roboto/Roboto-Medium.ttf);
   }
   /* Header */
-  *{
+ 
+  /*We cant set background color as default global style */
+  /* *{
       background-color: #1F2937;
-  }
+  } */
   #header{
       display: flex;
       align-items: center;
@@ -108,14 +245,14 @@ header {
   .hero-section strong {
       color: #CA68F9;
   }
-  
-  #hero-image1 {
+  /*position absolute is going over other elements,this needs to be changed*/
+  /* #hero-image1 {
       height: auto;
       width: 45%;
       position: absolute;
       top: 25%;
       left: 50%;
-  }
+  } */
   
   #hero-image2 {
       
@@ -293,7 +430,7 @@ header {
       text-decoration: none;
       margin-bottom: 20px;
   }
-  img {
+  .footer img {
       width: 100px;
       height: auto;
   }
