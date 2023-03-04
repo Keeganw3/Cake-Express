@@ -225,3 +225,61 @@ main {
   max-width: 100%;
   height: auto;
 }
+/*footer-banner*/
+.footer-banner{
+  background-color: rgba(32, 86, 136, 1);
+  color: #E5E7EB;
+}
+.wrapper{
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.footer-banner-text{
+  position: absolute;
+  top: 50%; 
+  left: 30%; 
+  transform: translate(-50%, -50%);
+  text-align: left; 
+
+} 
+
+.col{
+  flex-basis: 50%;
+  position: relative;
+}
+
+.p-color-base{
+  color: #1F2937;
+}
+.p-color-secondary{
+  color: #1FFC85;
+}
+
+.footer-image {
+  margin-left: 50px;
+}
+
+.input{
+  width: 50%;
+padding: 8px 16px;
+margin-right: 0;
+border-radius: 10px 0 0 10px ;
+border: none;
+}
+
+.btn-type-primary{
+  
+  padding: 8px 16px;
+background-color: #3FC675;
+border: none;
+margin-left: -5px;
+border-radius:0 10px 10px 0 ;
+}
+.input ,.btn-type-primary,.btn-type-secondary,.btn-type-tertiary{
+  box-shadow: 2px 2px 2px #353434;
+}
+.input-form{
+padding: 50px 0;
+}
