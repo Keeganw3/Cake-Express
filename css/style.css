@@ -1,13 +1,34 @@
 /*CSS RESETS*/
-
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
 * {
-    box-sizing: border-box;
+    font-family: 'Roboto-Regular';
   }
-  
   body {
     margin: 0;
   }
-  
   h1,
   h2,
   h3,
@@ -15,37 +36,31 @@
   ul {
     margin-top: 0;
   }
-  
-  img {
+  /* img {
     display: block;
     max-width: 100%;
-  }
+  } */
   /*CSS RESETS*/
-  
-  body {
-  
-  }
-  
-  
-  
-  header {
+  /* header {
       background-color: #e5e7eb;
       color: #1f2937;
-      text-size-adjust: 36px;
-    }
-    
+    } */
     .hero-section {
-      background-color: #1f2937;
-      color: #f9faf8;
-      text-size-adjust: 48px;
+        background-color: #1f2937;
+        color: #f9faf8;
+        text-size-adjust: 48px;
     }
-    
+    .hero-section h1, p{
+        font-family: 'Roboto-Black';
+        padding-bottom: 20px;
+        padding-right: 50px;
+    }
     .quote-section {
       background-color: #e5e7eb;
       color: #1f2937;
       text-size-adjust: 36px;
+      margin-bottom: 50px;
     }
-    
     body {
       background-color: #1f2937;
     }
@@ -56,7 +71,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-  }
+    }
   #feature .fe-box{
       width: 180px;
       text-align: center;
@@ -106,32 +121,33 @@
       padding: 20px 80px;
       color: #E5E7EB;
   }
-  
-    footer {
-      background-color: #1f2937;
-      color: #f9faf8;
-      text-size-adjust: 48px;
-    }
-  
-  
-  =======
+  footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-size-adjust: 48px;
   }
-  
-  
+  footer .icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    }
+    footer .icon img:hover{
+    box-shadow: 20px 20px 30px rgba(241, 234, 234, 0.06);
+    transform: translateY(-2px);
+}
   /* cart */
-  
   .cart{
       padding: 50px 0px;
-  background-color: #1E1E1E;
+      background-color: #1E1E1E;
   }
   .inner-section{
       display: flex;
-  padding: 20px;
+      padding: 20px;
   }
   .coupon-cart{
       text-align: start;
-  color: #E5E7EB;
-  margin-left: 20%;
+      color: #E5E7EB;
+      margin-left: 20%;
   }
   .heading-cart{
       display: flex;
@@ -152,21 +168,16 @@
       width: 30%;
       color: #F9FAF8;
       background-color: #205688;
-  
   }
   .btn-type-secondary{
       background-color: #205688;
       padding: 8px 16px;
-  border: none;
-  margin-left: -5px;
-  border-radius:0 10px 10px 0 ;
-  color: #F9FAF8;
-  
+      border: none;
+      margin-left: -5px;
+      border-radius:0 10px 10px 0 ;
+      color: #F9FAF8;
   }
-  
   /* cart */
-  
-  
   /*footer-banner*/
   .footer-banner{
       background-color: rgba(32, 86, 136, 1);
@@ -198,32 +209,29 @@
   .p-color-secondary{
       color: #1FFC85;
   }
-  
   .footer-image {
       margin-left: 50px;
   }
-  
   .input{
       width: 50%;
-  padding: 8px 16px;
-  margin-right: 0;
-  border-radius: 10px 0 0 10px ;
-  border: none;
+      padding: 8px 16px;
+      margin-right: 0;
+      border-radius: 10px 0 0 10px ;
+      border: none;
   }
-  
   .btn-type-primary{
       
-      padding: 8px 16px;
-  background-color: #3FC675;
-  border: none;
-  margin-left: -5px;
-  border-radius:0 10px 10px 0 ;
+    padding: 8px 16px;
+    background-color: #3FC675;
+    border: none;
+    margin-left: -5px;
+    border-radius:0 10px 10px 0 ;
   }
   .input ,.btn-type-primary,.btn-type-secondary,.btn-type-tertiary{
       box-shadow: 2px 2px 2px #353434;
   }
   .input-form{
-  padding: 50px 0;
+    padding: 50px 0;
   }
   /* footer-banner */
   
@@ -232,36 +240,12 @@
       color: #F9FAF8;
       text-size-adjust: 48px;
     }
-    @font-face {
-        font-family: 'Roboto-Regular';
-        src: url(/fonts/roboto/Roboto-Regular.ttf);
-    }
-    @font-face {
-        font-family: 'Roboto-Bold';
-        src: url(/fonts/roboto/Roboto-Bold.ttf);
-    }
-    @font-face {
-        font-family: 'Roboto-Light';
-        src: url(/fonts/roboto/Roboto-Light.ttf);
-    }
-    @font-face {
-        font-family: 'Roboto-LightItalic';
-        src: url(/fonts/roboto/Roboto-LightItalic.ttf);
-    }
-    @font-face {
-        font-family: 'Roboto-Medium';
-        src: url(/fonts/roboto/Roboto-Medium.ttf);
-    }
     /* Header */
-   
-    /*We cant set background color as default global style */
-    /* *{
-        background-color: #1F2937;
-    } */
     #header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-family: 'Roboto-Regular';
         padding: 20px 80px;
         background: #1F2937;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
@@ -306,13 +290,11 @@
         left: 20px;
     }
     /* ----- End Header ------ */
-    
     /* Home Page */
     .hero-section {
         color: white;
         width: 45%;
     }
-    
     .hero-section strong {
         color: #CA68F9;
     }
@@ -324,11 +306,6 @@
         top: 25%;
         left: 50%;
     }
-    
-    #hero-image2 {
-        
-    }
-    
     #shop-button {
         background-color: #CA68F9;
         color: white;
@@ -339,18 +316,9 @@
         margin-left: 25%;
         text-decoration: none;
     }
-    
     #shop-button:hover {
         color: black;
     }
-    
-    /* Custom Cakes Page*/
-    hero-image2 {
-    
-    }
-    
-    
-    /* Cart Page*/
     /* Cart Header  */
     .cart-header{
         background-image: url("../images/cartimage.jpg");
@@ -441,10 +409,9 @@
         justify-content: space-between;
     }
     #cart input {
-        color: #E5E7EB;
+        color: #1F2937;
     }
     /* ----- End Cart-Page ------ */
-    
     .quote {
         display: flex;
         flex-direction: column;
@@ -554,3 +521,82 @@
         max-width: 100%;
         height: auto;
     }
+    .cart .wrapper h4, p {
+        font-family: 'Roboto-Medium';
+    }
+    .footer-banner .wrapper h1 {
+        font-family: 'Roboto-Medium';
+    }
+    /* custom Cake */
+    .cards-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .card {
+        width: max-content;
+        background-color: #d9d9d9;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+      }
+      .card-title {
+        margin: 1rem auto;
+      }
+      .product-image {
+        max-width: 320px;
+        max-height: 300px;
+      }
+      .card-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .price {
+        color: #0e6f34;
+      }
+      .shopping-cart-image {
+        max-width: 30px;
+        max-height: 30px;
+        border-radius: 50%;
+      }
+      .shopping-cart-image:hover {
+        border: 1px solid #0e6f34;
+      }
+      .pagination {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        gap: 5px;
+      }
+      .pag-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: #0e6f34;
+        color: white;
+        transition: all 0.5s ease;
+        cursor: pointer;
+      }
+      .pag-btn:hover {
+        background-color: white;
+        color: #0e6f34;
+      }
